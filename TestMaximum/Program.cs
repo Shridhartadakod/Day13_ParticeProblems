@@ -10,7 +10,11 @@ namespace TestMaximum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Maximum numbers"); 
+            Console.WriteLine("Test Maximum numbers");
+            
+            Console.ReadKey();
+
+
         }
     }
 }
