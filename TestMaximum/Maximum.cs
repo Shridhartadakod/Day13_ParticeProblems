@@ -50,7 +50,12 @@ namespace TestMaximum
             this.array = array;
 
             Array.Sort(array);
-            Console.WriteLine("Max value is: {array[2]}");
+            PrintMax(array);
+        }
+
+        private void PrintMax(T[] value)
+        {
+            Console.WriteLine("Max value is:{ value[^1]}");
         }
     }
 }
