@@ -12,11 +12,14 @@ namespace TestMaximum
         {
             Console.WriteLine("======Test Maximum numbers======");
 
-            Console.WriteLine("Integer Tests");
+            Console.WriteLine("Integer test");
             TestCase.IntTest();
 
-            Console.WriteLine("Float tests");
+            Console.WriteLine("Float test");
             TestCase.FloatTest();
+
+            Console.WriteLine("String test");
+            TestCase.StringTest();
 
             Console.ReadKey();
 

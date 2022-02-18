@@ -14,6 +14,9 @@ namespace TestMaximum
         private static readonly float[] floatTestCase1;
         private static readonly float[] floatTestCase2;
         private static readonly float[] floatTestCase3;
+        private static readonly string[] stringTestCase1;
+        private static readonly string[] stringTestCase2;
+        private static readonly string[] stringTestCase3;
 
         static TestCase()
         {
@@ -23,6 +26,9 @@ namespace TestMaximum
             floatTestCase1 = new float[] { 1.1f, 2.2f, 3.3f };
             floatTestCase2 = new float[] { 0.0f, 2.2f, 3.3f };
             floatTestCase3 = new float[] { 5.5f, 6.6f, 1.1f };
+            stringTestCase1 = new string[] { "Ram","Sham","Varma"};
+            stringTestCase2 = new string[] { "Shri", "Dhar", "Ganga" };
+            stringTestCase3 = new string[] { "Dog", "Snake", "Wolf" };
 
         }
 
@@ -32,6 +38,9 @@ namespace TestMaximum
         public static float[] FloatTestcase1 => floatTestCase1;
         public static float[] FloatTestcase2 => floatTestCase2;
         public static float[] FloatTestcase3 => floatTestCase3;
+        public static string[] StringTestcase1 => stringTestCase1;
+        public static string[] StringTestCase2 => stringTestCase2;
+        public static string[] StringTestCase3=> stringTestCase3;
 
 
 
@@ -60,6 +69,18 @@ namespace TestMaximum
             Console.WriteLine("Test case 3: " + GetString(floatTestCase3));
             Maximum.FloatMax(floatTestCase3[0], floatTestCase3[1], floatTestCase3[2]);
 
+
+        }
+
+        public static void StringTest()
+        {
+            Console.WriteLine("Test case 1:" + GetString(stringTestCase1));
+            Maximum.StringMax(stringTestCase1[0], stringTestCase1[1], stringTestCase1[2]);
+
+            Console.WriteLine("Test case 2:" + GetString(stringTestCase2));
+            Maximum.StringMax(stringTestCase2[0], stringTestCase2[1], stringTestCase2[2]);
+            Console.WriteLine("Test case 3:" + GetString(stringTestCase3));
+            Maximum.StringMax(stringTestCase3[0], stringTestCase3[1], stringTestCase3[2]);
 
         }
     }
