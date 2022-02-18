@@ -10,8 +10,14 @@ namespace TestMaximum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Test Maximum numbers");
-            
+            Console.WriteLine("======Test Maximum numbers======");
+
+            Console.WriteLine("Integer Tests");
+            TestCase.IntTest();
+
+            Console.WriteLine("Float tests");
+            TestCase.FloatTest();
+
             Console.ReadKey();
 
 
