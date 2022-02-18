@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestMaximum
 {
-    internal class Maximum
+    internal class Maximum<T> where T:IComparable
     {
-        public static void IntMax(int num1,int num2,int num3)
+       /* public static void IntMax(int num1,int num2,int num3)
         {
             if (num1.CompareTo(num2) >= 0 && num1.CompareTo(num3) >= 0)
                 Console.WriteLine("Max value is :{ num1}");
@@ -37,6 +37,13 @@ namespace TestMaximum
                 Console.WriteLine("Max value is :{str2}");
             else
                 Console.WriteLine("Max value is:{str3}");
+        }*/
+
+        public static void Max(T var1,T var2,T var3)
+        {
+            T[] array = new T[] { var1, var2, var3 };
+            Array.Sort(array);
+            Console.WriteLine("Max value is: {array[2]}");
         }
     }
 }
